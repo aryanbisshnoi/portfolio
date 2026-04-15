@@ -52,40 +52,6 @@ export const aboutData = {
   ],
 };
 
-export const skillsData = {
-  heading: "Skills & Tech Stack",
-  categories: [
-    {
-      title: "Frontend",
-      skills: [
-        "React.js",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Material UI",
-      ],
-    },
-    {
-      title: "Backend",
-      skills: ["Java", "Spring Boot", "REST APIs", "Node.js"],
-    },
-    {
-      title: "Tools / Cloud / Testing",
-      skills: [
-        "Git",
-        "Jenkins",
-        "Maven",
-        "Google Cloud Platform",
-        "Kubernetes",
-        "Shell Scripting",
-        "Nightwatch.js",
-        "Docusaurus",
-      ],
-    },
-  ],
-};
-
 export const projectsData = {
   heading: "Featured Projects",
   projects: [
