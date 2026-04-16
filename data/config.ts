@@ -66,7 +66,7 @@ export const projectsData = {
         "Reduced onboarding time by ~50%",
         "Multiple releases and production deployments",
       ],
-      link: null,
+      link: "https://docs.candescent.com/",
       image: "/images/project-docs.png", // Place screenshot at /public/images/project-docs.png
       color: "amber",
     },
