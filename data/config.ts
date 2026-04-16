@@ -66,26 +66,9 @@ export const projectsData = {
         "Reduced onboarding time by ~50%",
         "Multiple releases and production deployments",
       ],
-      // Add a link when available: link: "https://..."
       link: null,
-      // Place a screenshot at /public/images/project-docs.png
-      image: null,
-      gradient: "from-amber-100 to-orange-100 dark:from-amber-950/40 dark:to-orange-950/40",
-    },
-    {
-      title: "Enterprise UI Revamp",
-      stack: ["React", "TypeScript", "CSS", "Material UI"],
-      description:
-        "Modernized a legacy enterprise banking application by revamping 20+ screens with modern React-based interfaces and CSS updates. Built reusable UI components and improved design consistency across modules while reducing page load times by around 30%.",
-      impacts: [
-        "Revamped 20+ screens",
-        "Reduced page load times by ~30%",
-        "Built reusable UI components",
-        "Improved UI consistency across modules",
-      ],
-      link: null,
-      image: null,
-      gradient: "from-blue-100 to-indigo-100 dark:from-blue-950/40 dark:to-indigo-950/40",
+      image: "/images/project-docs.png", // Place screenshot at /public/images/project-docs.png
+      color: "amber",
     },
     {
       title: "AI / Agentic Project",
@@ -94,8 +77,8 @@ export const projectsData = {
         "An upcoming personal project exploring AI-powered agentic workflows. Details will be shared once development is underway — stay tuned.",
       impacts: [],
       link: null,
-      image: null,
-      gradient: "from-emerald-100 to-teal-100 dark:from-emerald-950/40 dark:to-teal-950/40",
+      image: "/images/project-ai.png", // Place screenshot at /public/images/project-ai.png
+      color: "emerald",
       upcoming: true,
     },
   ],
