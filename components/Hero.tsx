@@ -20,16 +20,40 @@ export default function Hero() {
       />
 
       <div className="mx-auto max-w-6xl w-full relative z-10">
-        <div className="grid md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-center">
+        <div className="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-center">
           {/* Text content */}
           <div className="max-w-2xl">
-            <p className="text-sm font-mono tracking-widest uppercase text-muted mb-4 animate-fade-in-up">
-              {heroData.greeting}
-            </p>
+            {/* Mobile profile image — inline with text flow */}
+            <div className="flex items-center gap-5 mb-6 md:hidden animate-fade-in-up">
+              <div className="brutalist-card w-20 h-20 shrink-0 overflow-hidden bg-card">
+                <Image
+                  src={siteConfig.profileImage}
+                  alt={`Photo of ${siteConfig.name}`}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </div>
+              <div>
+                <p className="text-sm font-mono tracking-widest uppercase text-muted">
+                  {heroData.greeting}
+                </p>
+                <h1 className="text-3xl sm:text-4xl font-bold tracking-tight leading-[1.1]">
+                  {heroData.name}
+                </h1>
+              </div>
+            </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] animate-fade-in-up delay-100">
-              {heroData.name}
-            </h1>
+            {/* Desktop greeting + name */}
+            <div className="hidden md:block">
+              <p className="text-sm font-mono tracking-widest uppercase text-muted mb-4 animate-fade-in-up">
+                {heroData.greeting}
+              </p>
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] animate-fade-in-up delay-100">
+                {heroData.name}
+              </h1>
+            </div>
 
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed animate-fade-in-up delay-200">
               {heroData.tagline}
@@ -89,7 +113,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Profile image */}
+          {/* Desktop profile image */}
           <div className="hidden md:block">
             <div className="brutalist-card w-64 h-72 lg:w-72 lg:h-80 overflow-hidden bg-card">
               <Image
